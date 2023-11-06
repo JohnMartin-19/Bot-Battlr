@@ -1,5 +1,5 @@
 import React from "react";
-import App from "./App";
+
 
 
 function Mybots({bots}){
@@ -23,7 +23,9 @@ function Mybots({bots}){
                         <br />
                         <small id='class'>Bot_Class:{bot.bot_class}</small>
                         <br />
-                        <small id="DoManufacture">Created_At:{bot.created_at}</small>
+                        <small id="DoM">Created_At:{bot.created_at}</small>
+                        <br />
+                        <button style={ {backgroundColor: "red" ,padding: "10px 15px", borderRadius:'12px '}  } class="btn btn-danger"><strong>X</strong></button>
                     </div>
                     
                 ))}
