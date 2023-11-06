@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-function Mybots({bots}){
+function Mybots({bots, onAdd}){
     return(
         <div id="section">
             <h3><strong>MY BOTS!!</strong></h3>
@@ -10,7 +10,7 @@ function Mybots({bots}){
                 {bots.map((bot) =>(
                     <div key={bot.id}>
                         <div className="card">
-                        <img src={bot.avatar_url} alt="my avatar" />
+                        <img src={bot.avatar_url} alt="my avatar" onClick={() => onAdd(bot)}/>
                         </div>
                         <p id="id">Id:{bot.id}</p>
                         <h5 id="name" >Name:{bot.name}</h5>
