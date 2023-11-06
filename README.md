@@ -15,4 +15,6 @@ This is a project in Phase-2. The project was basically testing the depth and un
 
 So far i have done:
     *Data fetching and rendering it on the DOM
-    *
+    *Handling state events
+    *Handling Deleting through DELETE method
+    *Realising items from the state
