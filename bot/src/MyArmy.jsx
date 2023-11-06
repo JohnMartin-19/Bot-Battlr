@@ -1,13 +1,16 @@
 import React from "react";
 
-function MyArmy({ addedBots }) {
+function MyArmy({ addedBots, deleteBot }) {
+
+  
   return (
     <div style={{ backgroundColor: 'red' }}>
       <h1>My Army</h1>
       {addedBots.map((bot) => (
         <div className="card" key={bot.id}>
-          <img src={bot.avatar_url} alt="my avatar" />
-          <h5 id="name">Name: {bot.name}</h5>
+          <img src={bot.avatar_url} alt="my avatar"  onClick={() =>deleteBot(bot)}/>
+          <br />
+          <small id="name">Name: {bot.name}</small>
           <br />
           <small id="health">Health: {bot.health}</small>
           <br />

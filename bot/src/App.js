@@ -23,10 +23,14 @@ function App() {
     }
   }
 
+  function deleteBot(bot){
+    setAddedBots(addedBots.filter((addedBot) => addedBot.id !==
+     bot.id))
+  }
   
   return (
     <div className="App">
-      <MyArmy addedBots={addedBots} />
+      <MyArmy addedBots={addedBots} deleteBot={deleteBot} />
       < Mybots bots={bots} onAdd = {onAdd} />
       
     </div>
